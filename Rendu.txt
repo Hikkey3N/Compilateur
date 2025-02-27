@@ -1,0 +1,10 @@
+- Gestion des identifiants:
+    -> Variables globales
+    -> Constantes
+
+- Typages
+
+- Compilation
+    -> Expressions
+    -> instructions "de base" (affortation, lecture ecriture)
+    -> contrile -> si/tique/cond

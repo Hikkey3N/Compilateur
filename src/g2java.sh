@@ -13,7 +13,7 @@ then
 fi
 
 # Tests if the ANTLR file is readable
-ANTLR_JAR=../antlr-3.5.2-complete.jar #SI VSCODE ANTLR_JAR=../lib/antlr-3.5.2-complete.jar
+ANTLR_JAR=../lib/antlr-3.5.2-complete.jar #SI VSCODE ANTLR_JAR=../lib/antlr-3.5.2-complete.jar
 if [ ! -r $ANTLR_JAR ]
 then
   echo "error: could not read ANTLR Jar file: $ANTLR_JAR"
@@ -28,6 +28,6 @@ then
   exit 2
 fi
 
-export CLASSPATH=../antlr-3.5.2-complete.jar:.:$CLASSPATH  #SI VSCODE export CLASSPATH=../lib/antlr-3.5.2-complete.jar:.:$CLASSPATH
+export CLASSPATH=../lib/antlr-3.5.2-complete.jar:.:$CLASSPATH  #SI VSCODE export CLASSPATH=../lib/antlr-3.5.2-complete.jar:.:$CLASSPATH
 java org.antlr.Tool $1
 
